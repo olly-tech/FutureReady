@@ -34,7 +34,7 @@ for fruit in fruits:
 
 ############ ACTIVITY 6
 
-# DICTIONARIES
+# DICTIONARIES --> OPTIONAL 
 ## Creating a dictionary
 contact = {
     "name": "Alice",

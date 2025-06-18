@@ -109,7 +109,7 @@ def time_until_birthday(birthdate, currentdate):
 
 ##############################################
 
-## Importing modules - using datetime
+## Importing modules - using datetime OPTIONAL
 
 # put at the top of the file
 from datetime import datetime ## imports the current date (datetime)
