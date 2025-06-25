@@ -1,7 +1,9 @@
 # LISTS
+### similar to arrays, but difference is that lists can hold different data types, and arrays can only hold one type!!
 
 ## Creating a list
 fruits = ["apple", "banana", "cherry"]
+
 print(fruits)  # Output: ['apple', 'banana', 'cherry']
 
 ## Accessing list items by index (starting at 0)

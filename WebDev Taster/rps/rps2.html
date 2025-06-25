@@ -1,4 +1,4 @@
-<!-- draw out RPS style on flipchart-->
+<!-- draw out RPS final style on flipchart-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,8 +9,8 @@
 
     <link rel="stylesheet" href="/WebDev Taster/homepage/navbar.css" />
 
-    <!--add this stylesheet after adding images, style rps page on SEPARATE CSS PAGE to show how to use multiple stylesheets on one html page. -->
-    <link rel="stylesheet" href="rps.css">
+    <!--add this stylesheet after adding images and add only image sizing styling. Style rps page on SEPARATE CSS PAGE to show how to use multiple stylesheets on one html page. -->
+    <link rel="stylesheet" href="rps.css" />
   </head>
   <body>
     <nav>
@@ -35,10 +35,11 @@
     </header>
 
     <main>
+      <!-- don't add any classes until you have created them in CSS -->
       <section class="half-width choice-visual">
         <h2>Player Choice:</h2>
-        <!--how to add images-->
-        <img src="question.png" alt="question mark"/>
+        <!--how to add images (and crediting in footer) -->
+        <img src="question.png" alt="question mark" />
       </section>
       <section class="half-width choice-visual">
         <h2>CPU Choice:</h2>
@@ -52,16 +53,23 @@
         <button>Scissors</button>
       </section>
 
+
+      <!--move section to top once finished :) -->
       <section class="full-width score-container">
         <h2 class="full-width">Score</h2>
-        <p class="half-width">Player Score: </p>
-        <p class="half-width">CPU Score: </p>
+        <p class="half-width">Player Score:</p>
+        <p class="half-width">CPU Score:</p>
         <button class="full-width">Reset</button>
       </section>
     </main>
 
     <footer>
       <p>Created by Olly & Jayla</p>
+      <a
+        href="https://www.flaticon.com/free-icons/question-mark"
+        title="question mark icons"
+        >Question mark icons created by Freepik - Flaticon</a
+      >
     </footer>
   </body>
 </html>

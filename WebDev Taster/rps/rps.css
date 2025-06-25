@@ -9,6 +9,7 @@ section {
   margin: 0.1em;
 }
 
+
 main {
   padding: 0.1em;
   /*change flex direction on this page to have choices side by side*/
@@ -46,6 +47,8 @@ main {
   align-items: center;
 
   padding: 0.3em;
+
+  height: 20vh; /* removes some whitespace --> OPTIONAL */
 }
 
 /* player choice buttons width about a third width */
@@ -74,14 +77,6 @@ h2 {
   padding: 0.1em;
 }
 
-#win {
-  /* don't add padding or it'll show up when you reset */
-  background-color: lightsalmon;
-  border-radius: 0.5em;
-  margin: 0;
-  width: 100%;
-}
-
 /* formatting the photo credits */
 footer {
   line-height: 0.7;
@@ -95,4 +90,12 @@ footer a {
 footer p {
   padding: 0.3em;
   font-size: 0.8em;
+}
+/* DO LAST */
+#win {
+  /* don't add padding or it'll show up when you reset */
+  background-color: lightsalmon;
+  border-radius: 0.5em;
+  margin: 0;
+  width: 100%;
 }

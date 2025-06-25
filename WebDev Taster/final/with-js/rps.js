@@ -1,5 +1,3 @@
-
-
 let playerCounter = 0;
 let cpuCounter = 0;
 

@@ -22,7 +22,7 @@ main {
 }
 
 .choice-visual {
-  height: 30vh;
+  height: 30vh; 
 
   display: flex;
   flex-direction: column;
@@ -32,6 +32,8 @@ main {
 
 .score-container,
 .choice-container {
+  height: 20vh; /* removes some whitespace --> OPTIONAL */
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
