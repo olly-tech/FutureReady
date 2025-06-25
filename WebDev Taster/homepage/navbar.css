@@ -1,0 +1,37 @@
+/* show li first and why nav li is the better selector by adding list into <main> */
+nav li {
+    list-style: none;
+    padding: 0.3em;
+}
+
+nav ul {
+    padding: 0.5em;
+    background-color: salmon;
+}
+
+/* restyling links */
+
+nav li {
+    color: antiquewhite; /* doesn't work because it needs to be in a! */
+}
+
+nav a {
+    color: antiquewhite;
+    text-decoration: none; /* still need some way to show it's a link */
+}
+
+nav li:hover {
+    background-color: lightsalmon;
+}
+
+nav ul {
+    padding:0; /* delete padding */
+}
+
+
+/* OPTIONAL aesthetics - add border to bottom of last list item ? */
+.last {
+    border-bottom: 0.1em solid antiquewhite;
+}
+
+/*==========*/

@@ -1,0 +1,160 @@
+/* for index1.html, basic CSS selectors & properties */
+body {
+  background-color: darkslategray;
+  color: white;
+}
+
+/* for index2.html, using semantic HTML */
+header {
+  background-color: red;
+}
+
+main {
+  background-color: orange;
+}
+
+footer {
+  background-color: greenyellow;
+}
+
+/* INTRODUCE DEVTOOLS HERE & BOX MODEL - use h1 for demo*/
+h1 {
+  padding: 1rem;
+  border: 5px solid black;
+  margin: 1rem;
+}
+
+/* DEFAULT RESET STYLING & why use border-box */
+/* DevTools margin on body issue */
+body {
+  margin: 0;
+}
+
+/* difference between main & footer shows that padding & border is included into */
+/* actual width = width + padding + border */
+main {
+  width: 50%;
+  /* height: 40vh; */
+
+  /*adding margin doesn't change width/height*/
+  margin: 1rem;
+}
+
+footer {
+  width: 50%;
+  /* height: 40vh; */
+
+  /* adding padding affects width/height */
+  padding: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* STYLING - clean up code so it looks like this :) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Fonts & text formatting */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+
+  background-color: antiquewhite;
+  color: rgb(35, 34, 34);
+}
+
+/* how to combine selectors */
+main,
+header,
+footer {
+  width: 100%;
+  margin: 0; /* delete margin */
+  padding: 0.5rem;
+}
+
+h1 {
+  margin: 0; /* delete margin */
+  padding: 0; /* delete padding */
+  border: none; /* delete border */
+}
+
+/* FLEXBOX*/
+body {
+    margin: 0; /* delete margin */
+    height: 600px; /* use pixel measurement to show how flex works in next selector */
+  display: flex;
+  flex-direction: column;
+}
+
+main, header, footer {
+  flex: 1; /*if body is 600px, each of these will be 200px. */
+}
+
+main {
+    flex: 4; /* if body is 600px, main is now 400px, and header/footer are 100px. 1:4:1 ratio */
+}
+
+
+
+/* VIEWPORT HEIGHT & FINAL FLEXBOX LAYOUT */
+body {
+    height: 100%; /*100% of the WIDTH not height*/
+    height: 100vh;
+  /*replace height with min-height */
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+main {
+    flex: 1;
+
+    /* vertically centre the text in the main box using flexbox*/
+    display: flex;
+    flex-direction: column; /* stops the blocks from going next to each other horizontally */
+    justify-content: center; /*centres horizontally*/
+    align-items: center; /*centres vertically */
+
+}
+
+header, footer {
+    flex:0; /* delete flex */
+}
+
+/* CHANGE COLOURS RIGHT AT THE END */
+
+main {
+    background-color: antiquewhite;
+}
+
+header {
+    background-color: lightsalmon;
+}
+footer {
+    background-color: salmon;
+}
+/*optional, non-essential*/
+h2 {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+header {
+   padding: 1rem;
+   font-size: 0.9rem;
+}
+
+
+/*============*/
+
