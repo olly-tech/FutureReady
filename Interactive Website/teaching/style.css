@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Fonts & text formatting */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+
+  /*colour*/
+  background-color: antiquewhite;
+  color: rgb(35, 34, 34);
+
+  /*flexbox & layout*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* navbar */
+nav li {
+  list-style: none;
+  padding: 0.3em;
+}
+
+nav ul {
+  background-color: salmon;
+}
+
+nav a {
+  color: antiquewhite;
+  text-decoration: none; /* still need some way to show it's a link */
+}
+
+nav li:hover {
+  background-color: lightsalmon;
+}
+
+/* header */
+header,
+footer {
+  background-color: lightsalmon;
+}
+header {
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* main container */
+main {
+  flex: 1; /* forces footer to bottom */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: antiquewhite;
+}
+
+/* footer */
+footer {
+  line-height: 0.7;
+  padding: 0.4rem;
+  background-color: salmon;
+}
+footer a {
+  font-size: 0.5rem;
+  color: antiquewhite;
+}
+
+footer p {
+  padding: 0.3em;
+  font-size: 0.8em;
+}
+
+/* headers and paragraph general styling */
+h2 {
+  padding: 0.1em;
+  font-size: 1.2rem;
+}
+
+
+

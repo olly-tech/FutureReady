@@ -1,0 +1,84 @@
+<!-- draw out RPS style on flipchart -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="rps.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="https://www.minecraft.net/en-us" target="_blank"
+            >Play Minecraft</a
+          >
+        </li>
+
+        <li>
+          <a href="rps.html">Play Rock Paper Scissors</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <main>
+      <section class="full-width score-container">
+        <h2 class="full-width">Score</h2>
+        <p id="win"></p>
+        <p class="half-width">Player Score: <span id="playerText">0</span></p>
+        <p class="half-width">CPU Score: <span id="cpuText">0</span></p>
+        <button class="full-width" onclick="resetGame()">Reset</button>
+      </section>
+      <section class="half-width choice-visual">
+        <h2>Player Choice:</h2>
+        <img src="question.png" alt="question mark" id="pImg" />
+      </section>
+      <section class="half-width choice-visual">
+        <h2>CPU Choice:</h2>
+        <img src="question.png" alt="question mark" id="cImg" />
+      </section>
+
+      <section class="full-width choice-container">
+        <h2 class="full-width">Select Your Choice:</h2>
+        <button onclick="playRound('r')">Rock</button>
+        <button onclick="playRound('p')">Paper</button>
+        <button onclick="playRound('s')">Scissors</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>Created by Olly & Jayla</p>
+      <a href="https://www.flaticon.com/free-icons/paper" title="paper icons"
+        >Paper icons created by Freepik - Flaticon</a
+      >
+      <a href="https://www.flaticon.com/free-icons/rock" title="rock icons"
+        >Rock icons created by Freepik - Flaticon</a
+      >
+      <a
+        href="https://www.flaticon.com/free-icons/scissor"
+        title="scissor icons"
+        >Scissor icons created by Freepik - Flaticon</a
+      >
+      <a
+        href="https://www.flaticon.com/free-icons/question-mark"
+        title="question mark icons"
+        >Question mark icons created by Freepik - Flaticon</a
+      >
+      <a
+        href="https://www.flaticon.com/free-icons/hamburger"
+        title="hamburger icons"
+        >Hamburger icons created by See Icons - Flaticon</a
+      >
+    </footer>
+    <script src="rps2.js"></script>
+  </body>
+</html>

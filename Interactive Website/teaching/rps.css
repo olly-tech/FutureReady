@@ -1,0 +1,73 @@
+img {
+  height: 50%;
+}
+
+section {
+  background-color: lightblue;
+  margin: 0.1em;
+}
+
+main {
+  padding: 0.1em;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.half-width {
+  width: 49%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.choice-visual {
+  height: 30vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-container,
+.choice-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.3em;
+}
+
+/* player choice buttons width about a third width */
+.choice-container button {
+  width: 32%;
+}
+
+/* make the buttons look nicer */
+button {
+  padding: 0.5em;
+  margin: 0.1em;
+  background-color: lightcoral;
+  border: none;
+  border-radius: 0.5em;
+}
+
+button:hover {
+  background-color: lightsalmon;
+}
+
+/* optional to make the reset button look nicer */
+.score-container button {
+  width: 98%;
+}
+
+/* pop up win/lose message */
+#win {
+  background-color: lightsalmon;
+  border-radius: 0.5em;
+  margin: 0;
+  width: 100%;
+}

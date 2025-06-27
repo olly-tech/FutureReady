@@ -1,0 +1,39 @@
+When the player clicks a button:
+ -> playRound(choice)
+Inside playRound:
+ 1. Show what the player chose.
+ 2. CPU randomly picks rock, paper or scissors.
+ 3. Compare both choices.
+ 4. Update the scores and show the winner message.
+ 5. Check if someone reached 10 points.
+ - If yes, show an alert and reset the game
+
+
+////// FLOW DIAGRAM VERSION ///////
+[Player clicks button]
+        │
+        ▼
+[playRound(choice)]
+        │
+        ├──► showPlayerChoice(choice)
+        │         └── Display choice (+ change image --> teach at end)
+        │
+        ├──► cpuChoose()
+        │         └── Randomly pick "r", "p", or "s"
+        │         └── Display CPU choice + change image
+        │         └── Return CPU choice
+        │
+        ├──► checkWinner(playerChoice, cpuChoice)
+        │         └── Compare choices
+        │         └── Return "win", "lose", or "draw"
+        │
+        ├──► updateScore(result)
+        │         └── Update score counters and messages
+        │
+        └──► checkGameOver()
+                  └── If score reaches 10, show alert
+                  └── Reset game if necessary
+
+
+
+
