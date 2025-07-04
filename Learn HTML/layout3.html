@@ -1,0 +1,63 @@
+<!-- <details> and title attribute -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Playground</title>
+    <link rel="stylesheet" href="layout.css" />
+  </head>
+  <body>
+    <nav>
+      <p>nav</p>
+    </nav>
+    <header>
+      <h1>Header</h1>
+    </header>
+    <main>
+      <p>main</p>
+      <section>
+        <h2>section 1</h2>
+        <p>wow some text</p>
+      </section>
+      <section>
+        <h2>section 2</h2>
+        <ol>
+          <li>point 1</li>
+          <li>point 2</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Section 3</h2>
+        <p>A link to <a href="" target="_blank">Google</a></p>
+      </section>
+      <section>
+        <h2>Section 4</h2>
+        <!-- details -->
+        <details>
+          <summary>Hidden Content</summary>
+          <p>This content is hidden by default until expanded.</p>
+          <!--embed videos using <iframe>-->
+          <iframe
+            width="100%"
+            height="400"
+            src="https://www.youtube.com/embed/nA1QKpKuSd4?si=c4cbgrITSi8q2Oaj"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </details>
+      </section>
+    </main>
+    <aside>
+      <p>aside</p>
+      <img src="menus.png" alt="image" width="20%" />
+    </aside>
+    <footer>
+      <!-- title="" for hover text-->
+      <p title="hover text">footer</p>
+    </footer>
+  </body>
+</html>

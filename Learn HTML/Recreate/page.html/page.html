@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product Display</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="page.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Simple Shop</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Product Name</h2>
+        <img src="" alt="Product Image" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu dictum
+          urna, ac mollis tortor. Sed molestie, ex eu aliquam convallis, elit
+          ligula porttitor orci, quis suscipit dolor nisi non neque.
+        </p>
+        <p>Price: <span>$29.99</span></p>
+
+        <details>
+          <summary>Product Specifications</summary>
+          <ul>
+            <li>Material: Premium cotton</li>
+            <li>Dimensions: 20cm x 30cm</li>
+            <li>Available colours: Blue, Red, Green</li>
+            <li>Made in UK</li>
+          </ul>
+        </details>
+      </section>
+
+      <section>
+        <h2>Add to Cart</h2>
+        <form>
+          <label for="quantity">Quantity:</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            value="1"
+          />
+          <button>Add to Cart</button>
+        </form>
+        <dialog>
+          <p>Item added to cart!</p>
+          <button>Close</button>
+        </dialog>
+      </section>
+
+      <aside>
+        <h2>Related Products</h2>
+        <ol>
+          <li><a href="#">Another Product</a></li>
+          <li><a href="#">Popular Item</a></li>
+          <li><a href="#">Special Offer</a></li>
+        </ol>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Simple Shop</p>
+    </footer>
+    <script src="page.js"></script>
+  </body>
+</html>
