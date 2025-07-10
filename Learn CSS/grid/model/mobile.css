@@ -1,0 +1,11 @@
+/* mobile.css — grid layout */
+body {
+  display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  gap: 0; /* adjust if you need spacing between sections */
+}
+
+
+nav, header, main, aside, footer {
+  grid-column: 1/5;
+}

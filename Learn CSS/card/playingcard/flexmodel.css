@@ -1,0 +1,26 @@
+/*FLEX SPECIFIC*/
+
+#playing-cards {
+  display: flex; /*flex for all cards*/
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /*remove margin from before*/
+}
+
+.card {
+  display: flex; /*flex for inside card*/
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top {
+  align-self: flex-start;
+}
+
+.middle {
+  align-self: center;
+}
+
+.bottom {
+  align-self: flex-end;
+}

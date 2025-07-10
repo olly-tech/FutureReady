@@ -1,0 +1,50 @@
+/*STYLING*/
+body {
+  background-color: #b8b8ff;
+  font-size: 2rem;
+}
+.card {
+  background-color: #f8f7ff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px #ffd8be;
+  color: #9381ff;
+}
+
+/*WIDTH/HEIGHTS*/
+.card {
+  box-sizing: border-box;
+  width: 250px;
+  height: 400px;
+}
+
+.middle {
+  font-size: 5rem;
+}
+
+/*FLEX SPECIFIC*/
+
+#playing-cards {
+  display: flex; /*flex for all cards*/
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex; /*flex for inside card*/
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top {
+  align-self: flex-start;
+}
+
+.middle {
+  align-self: center;
+}
+
+.bottom {
+  align-self: flex-end;
+}

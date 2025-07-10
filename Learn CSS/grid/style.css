@@ -1,0 +1,49 @@
+/* add or change general styling on this page. Do not add grid layouts to this page! */
+
+body {
+  font-family: sans-serif;
+  font-size: 12pt;
+}
+
+nav {
+  background-color: #4a90e2;
+
+
+
+}
+
+header {
+  background-color: #50e3c2;
+
+
+}
+
+main {
+  background-color: #f5a623;
+
+
+}
+
+aside {
+  background-color: #b8e986;
+
+
+}
+
+footer {
+  background-color: #d0021b;
+  color: white;
+
+
+}
+
+section {
+  background-color: #edd2a7;
+}
+
+/*navbar remove bullet points*/
+nav li {
+  list-style: none;
+}
+
+/* challenge: can you figure out why the navbar links are to the right? can you fix it? */

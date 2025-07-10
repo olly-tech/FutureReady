@@ -1,0 +1,26 @@
+/*STYLING*/
+body {
+    background-color: #B8B8FF;
+    font-size: 2rem;
+}
+.card {
+    background-color: #F8F7FF;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px #FFD8BE;
+    color: #9381FF;
+}
+
+/*WIDTH/HEIGHTS*/
+.card {
+    box-sizing: border-box;
+    width: 250px;
+    height: 400px;
+    /*delete after flex*/
+    margin: 10px; 
+}
+
+.middle {
+    font-size: 5rem;
+}
+

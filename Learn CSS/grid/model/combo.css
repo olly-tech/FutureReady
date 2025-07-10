@@ -1,0 +1,37 @@
+/* mobile.css — grid layout */
+
+body {
+  display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  gap: 0; /* adjust if you need spacing between sections */
+}
+
+
+nav, header, main, aside, footer {
+  grid-column: 1/5;
+}
+
+
+@media (min-width: 768px) {
+  /* add in everything from desktop.css, then delete anything that's repeated from above */
+
+  nav {
+    grid-column: 1 / 5;
+  }
+
+  header {
+    grid-column: 1 / 5;
+  }
+
+  main {
+    grid-column: 1 / 4;
+  }
+
+  aside {
+    grid-column: 4 / 5;
+  }
+
+  footer {
+    grid-column: 1 / 5;
+  }
+}

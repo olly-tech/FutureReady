@@ -1,0 +1,30 @@
+/* add general styling to style.css. This includes margins/padding editing */
+/* desktop.css — grid layout */
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0; /* adjust if needed */
+}
+
+/* Position each section on the grid */
+
+nav {
+  grid-column: 1 / 5; 
+}
+
+header {
+  grid-column: 1 / 5; 
+}
+
+main {
+  grid-column: 1 / 4; 
+}
+
+aside {
+  grid-column: 4 / 5; 
+}
+
+footer {
+  grid-column: 1 / 5; 
+}
